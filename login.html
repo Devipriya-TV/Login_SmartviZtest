@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartViz - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('./01.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .platform-name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 40px;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        .login-button {
+            background-color: #6a5acd;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .login-button:hover {
+            background-color: #5b4ac4;
+        }
+        .register-link {
+            color: #6a5acd;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+        }
+        .register-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Platform name header -->
+    <div class="platform-name">SmartViz</div>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form action="dashboard.html" method="post">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <a href="signup.html" class="register-link">Don’t have an account? Register</a>
+    </div>
+</body>
+</html>
